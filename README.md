@@ -1,66 +1,59 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Test Project Outline – Module C — Commercial Open API
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+This document outlines the description of Module C. It is circulated to the competitors and experts 3 months prior to
+the competition. This outline only describes the basic information of module C. The actual test project module will be
+created by external Test Project Developers using this outline as a guide. The module description will be presented on
+C-2 to all experts. The marking scheme will not be presented or supplied to competitors or experts during the
+competition.
 
-## About Laravel
+## Introduction
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Module C will focus on the implementation of a REST API.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Description of project and Tasks
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+The competitors will be asked to create a REST API that will be used commercially. The API must be built with features
+which allow it to be commercialized and made available publicly and openly. The functionality created by competitors in
+this module, builds on top of the functionality created in module B. Competitors will be given a working solution of
+Module B at the start of Module C, which they must use. Competitors are not allowed to build on top of their own Module
+B solution. This will include the database and the data that is stored in it.
 
-## Learning Laravel
+The functionality of the API will be to provide external access to a number of functions, which will be run as separate
+services. Those services will all expose a REST API themselves, which however should not be publicly accessible, as they
+do not have any level of security and reliability as the commercial API. The code of the services will not be disclosed
+to competitors. Instead, a description of the API in the form of an OpenAPI specification and a generated documentation
+based on it will be provided. Competitors are supposed to build code which wraps these APIs and exposes them through a
+single API. The function services can expose different ways of accessing their features and how to pass and receive
+data.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+There will also be a specification for the API that competitors are supposed to create. This specification will also be
+in the form of an OpenAPI specification and a generated documentation based on it. The specification will describe the
+endpoints that competitors are supposed to implement. The specification will also describe the authentication and other
+non-functional requirements of the API.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Assessment
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Module C will be assessed using tools which directly access the API created by competitors. The API will be tested for
+its functionality and its adherence to the specification. The API will also be tested for its security and reliability.
 
-## Laravel Sponsors
+Any modifications in the provided backend of previous modules, including any changes to the database, will not be taken
+into account.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## Competition time
 
-### Premium Partners
+Competitors will have **3 hours** to complete module C.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+## Mark distribution
 
-## Contributing
+The table below outlines how marks are broken down and how they align with the WorldSkills Occupation Standards (WSOS).
+Please read the Technical Description for a full explanation of the WorldSkills Occupation Standards.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+| WSOS SECTION | Description                            | Points |
+|--------------|----------------------------------------|--------|
+| 1            | Work organisation and self-management  | 1      |
+| 2            | Communication and interpersonal skills | 1      |
+| 3            | Design Implementation                  | 0      |
+| 4            | Front-End Development                  | 0      |
+| 5            | Back-End Development                   | 15     |
+|              |                                        |        |
+| **Total**    |                                        | 17     |
