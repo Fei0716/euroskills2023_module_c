@@ -48,7 +48,7 @@ class ChatterBlastAiController extends Controller
                 ], 400);
             }
 
-            if($response->status() === 503){
+            if($response->status() === 500){
                 return response()->json([
                       "type" => "/problem/types/503",
                       "title" => "Service Unavailable",
@@ -70,7 +70,7 @@ class ChatterBlastAiController extends Controller
                 ], 400);
             }
 
-            if($response->status() === 503){
+            if($response->status() === 500){
                 return response()->json([
                     "type" => "/problem/types/503",
                     "title" => "Service Unavailable",
@@ -104,7 +104,7 @@ class ChatterBlastAiController extends Controller
                     "detail" => "The request is invalid."
                 ], 400);
             }
-            if($response->status() === 503){
+            if($response->status() === 500){
                 return response()->json([
                     "type" => "/problem/types/503",
                     "title" => "Service Unavailable",
@@ -152,7 +152,7 @@ class ChatterBlastAiController extends Controller
                     "detail" => "The request is invalid."
                 ], 400);
             }
-            if($response->status() === 503){
+            if($response->status() === 500){
                 return response()->json([
                     "type" => "/problem/types/503",
                     "title" => "Service Unavailable",
@@ -237,7 +237,7 @@ class ChatterBlastAiController extends Controller
                 ], 400);
             }
 
-            if($response->status() === 503){
+            if($response->status() === 500){
                 return response()->json([
                     "type" => "/problem/types/503",
                     "title" => "Service Unavailable",
@@ -271,7 +271,7 @@ class ChatterBlastAiController extends Controller
                     "detail" => "The request is invalid."
                 ], 400);
             }
-            if($response->status() === 503){
+            if($response->status() === 500){
                 return response()->json([
                     "type" => "/problem/types/503",
                     "title" => "Service Unavailable",

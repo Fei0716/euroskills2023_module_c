@@ -31,7 +31,7 @@ class DreamweaverAiController extends Controller
             ], 400);
         }
 
-        if($response->status() === 503){
+        if($response->status() === 500){
             return response()->json([
                 "type" => "/problem/types/503",
                 "title" => "Service Unavailable",
@@ -92,7 +92,7 @@ class DreamweaverAiController extends Controller
             ], 400);
         }
 
-        if($response->status() === 503){
+        if($response->status() === 500){
             return response()->json([
                 "type" => "/problem/types/503",
                 "title" => "Service Unavailable",
@@ -115,7 +115,7 @@ class DreamweaverAiController extends Controller
                 ], 400);
             }
 
-            if($response->status() === 503){
+            if($response->status() === 500){
                 return response()->json([
                     "type" => "/problem/types/503",
                     "title" => "Service Unavailable",
@@ -192,7 +192,7 @@ class DreamweaverAiController extends Controller
             ], 400);
         }
 
-        if($response->status() === 503){
+        if($response->status() === 500){
             return response()->json([
                 "type" => "/problem/types/503",
                 "title" => "Service Unavailable",
@@ -284,7 +284,7 @@ class DreamweaverAiController extends Controller
                 "detail" => "The requested resource was not found."
             ],404);
         }
-        if($response->status() === 503){
+        if($response->status() === 500){
             return response()->json([
                 "type" => "/problem/types/503",
                 "title" => "Service Unavailable",
@@ -360,7 +360,7 @@ class DreamweaverAiController extends Controller
                 "detail" => "The requested resource was not found."
             ],404);
         }
-        if($response->status() === 503){
+        if($response->status() === 500){
             return response()->json([
                 "type" => "/problem/types/503",
                 "title" => "Service Unavailable",
@@ -437,7 +437,7 @@ class DreamweaverAiController extends Controller
                 "detail" => "The requested resource was not found."
             ],404);
         }
-        if($response->status() === 503){
+        if($response->status() === 500){
             return response()->json([
                 "type" => "/problem/types/503",
                 "title" => "Service Unavailable",
